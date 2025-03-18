@@ -4,7 +4,8 @@ services:
     env: python
     plan: free
     buildCommand: "pip install -r requirements.txt"
-    startCommand: "gunicorn app:app"
+    startCommand: "gunicorn app:app --chdir /opt/render/project/src"
+
     envVars:
       - key: FLASK_APP
         value: app.py
