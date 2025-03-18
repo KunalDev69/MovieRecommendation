@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: movie-recommendation
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn app:app"
+    envVars:
+      - key: FLASK_APP
+        value: app.py
+    pythonVersion: 3.11.11  # Explicitly specify Python version
+    autoDeploy: true
