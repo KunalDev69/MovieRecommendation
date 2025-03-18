@@ -19,12 +19,13 @@ packaging==24.1
 pandas==2.2.3
 pillow==11.0.0
 pyparsing==3.2.0
-pypiwin32==223
+
 python-dateutil==2.9.0.post0
 pyttsx3==2.98
 pytz==2024.2
 
 pywin32==309; sys_platform == 'win32'
+pypiwin32; sys_platform == 'win32'
 requests==2.32.3
 seaborn==0.13.2
 six==1.16.0
