@@ -11,7 +11,7 @@ app = Flask(__name__)
 
 # API KEYS
 OMDB_API_KEY = os.getenv("OMDB_API_KEY", "1197b38b")
-YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY", "AlzaSyDkkYKCN6Q4nyP7O0qdatn8q5wZpxfPzY")
+YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY", "AIzaSyDkkYKCN6Q4nyP7O0qdatn8q5wZdPxfPzY")
 YOUTUBE_SEARCH_URL = "https://www.googleapis.com/youtube/v3/search"
 
 
